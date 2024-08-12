@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121318;
+}
+
+.container{
+  margin-top: 10%;
+
+}
+
+.card{
+    background: #aeaeaf;
+    margin: 0 auto;
+    padding: 2em;
+    width: 320px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.card::after, .card::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    translate:-50% -50%;
+z-index: -1;
+padding: 4px;
+border-radius: 10px;
+background-image: conic-gradient(#ff4545, #00ff99, #006aff, #ff0095);
+
+}
+
+
+
+.card::before{
+filter: blur(1.5rem
+ );
+}
